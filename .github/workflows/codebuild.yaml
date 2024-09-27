@@ -7,4 +7,7 @@ jobs:
       - codebuild-github-runner-tutorial-${{ github.run_id }}-${{ github.run_attempt
         }}
     steps:
-      - run: echo "Hello World!"
+      - run: |-
+          echo "Hello World!"
+          ls /opt
+          ls /opt/spack*
